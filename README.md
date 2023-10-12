@@ -118,6 +118,15 @@ Add screenshots below showing,
 * Your code coverage
 * Your color contrast test
 
+![Working Example](working_1.png)
+![Working Example](working_2.png)
+![Working Example](working_3.png)
+![Working Example](working_4.png)
+![Validation Example](validate.png)
+![Code Coverage Example](tests.png)
+![CSS Example](a11y.png)
+
+
 Update the README to answer the following questions:
 
  1. Add a link to your website.
