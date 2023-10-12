@@ -131,9 +131,28 @@ Update the README to answer the following questions:
 
  1. Add a link to your website.
  2. When should you use `post` instead of `get`? When should you use `get` instead of `post`?
+    
+    Both POST And GET are HTML methods that have distinct characteristics. GET is used for data retrieval operations where no side effects on the server are intended. POST is used to submit data to the server for processing, especially if the data is sensitive or large in volume. Is it important to note that GET is idempotent: Making the same GET request multiple times produces the same result with no side-effects. However, POST is not indempotent: Making the same POST request multiple times may result in different outcomes or side-effects.
+
+
  3. Define `web cookie` in your own words. Cite at least two sources you used when creating your definition.
+    
+    A web cookie is a small piece of data that a website sends to a user's web browser while they are browsing. Web cookies help websites remember information about the user, and thus they play a crucial role in enhancing user web experience.
+
+    Sources: 
+
+    https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
+
+    https://www.w3schools.com/js/js_cookies.asp 
+
  4. For many applications, html web storage objects (local storage and session storage) are recommended instead of cookies [w3schools](https://www.w3schools.com/html/html5_webstorage.asp). Summarize what these objects are and then explain why they were not used for this application.
+
+    HTML web storage objects provide a way for web pages to store key-value pairs in a web browser that allows a much higher storage limit compared to cookies. They were not used in this application because a higher storage limit was not needed, and they are much more difficult to work with compared to cookies. Cookies provided us a much simpler server-side demonstration.
+
+
  5. Lookup the [express-validator](https://express-validator.github.io/docs/) middleware. Why is it a good idea to validate and sanitize data from the user using a package like this?
+
+    It is a good idea to validate and sanitize data from the user to ensure data integrity, security, and proper application functioning. This express-validator package can provide protection from attacks, reduces server errors, and allows for data integrity. 
 
  ---
 
