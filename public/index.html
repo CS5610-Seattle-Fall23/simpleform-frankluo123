@@ -71,13 +71,13 @@
 
 
 <!-- Helps with cookie management / output -->
-<div id="cookieMessage"></div>
+<div id="cookie"></div>
 <script>
     const cookies = document.cookie.split(';');
     for(let i = 0; i < cookies.length; i++){
         const split = cookies[i].split('=');
-        if(split[0].trim() === "userPreference"){
-            document.getElementById("cookieMessage").innerText = split[1];
+        if(split[0].trim() === "favoriteFruit"){
+            document.getElementById("cookie").innerText = split[1];
             break;
         }
     }

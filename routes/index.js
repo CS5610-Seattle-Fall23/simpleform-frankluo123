@@ -17,7 +17,7 @@ var express = require('express');
 var router = express.Router();
 
 /**
-* Sets up a route handler for GET requests 
+* Sets up a route handler for GET requests  
 * Sends HTML file located in public directory to client
 */ 
 router.get('/', function(req, res, next) {
@@ -50,7 +50,8 @@ router.post('/submitFoodPreferences', (req, res, next) => {
   console.log(req.body.spiciness);
 
   // For cookie and a thank you message for the POST request
-  res.cookie('bestcookie', 'samoas', { maxAge: 900000, httpOnly: false});
+  // res.cookie('bestcookie', 'samoas', { maxAge: 900000, httpOnly: false});
+  res.cookie('favoriteFruit', req.body.favoriteFruit, { maxAge: 900000, httpOnly: false });
   res.send("Thanks for sharing your food preferences!");
 });
 

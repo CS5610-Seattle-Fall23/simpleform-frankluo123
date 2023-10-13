@@ -124,12 +124,17 @@ Add screenshots below showing,
 ![Working Example](working_4.png)
 ![Validation Example](validate.png)
 ![Code Coverage Example](tests.png)
+![Code Coverage Example](testcoverage.png)
 ![CSS Example](a11y.png)
 
 
 Update the README to answer the following questions:
 
  1. Add a link to your website.
+
+    (Have to type 'npm start' for website to work)
+    https://didactic-goggles-4xrg74j99rj2jw7r-3000.app.github.dev/ 
+    
  2. When should you use `post` instead of `get`? When should you use `get` instead of `post`?
     
     Both POST And GET are HTML methods that have distinct characteristics. GET is used for data retrieval operations where no side effects on the server are intended. POST is used to submit data to the server for processing, especially if the data is sensitive or large in volume. Is it important to note that GET is idempotent: Making the same GET request multiple times produces the same result with no side-effects. However, POST is not indempotent: Making the same POST request multiple times may result in different outcomes or side-effects.
